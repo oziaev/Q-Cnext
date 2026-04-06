@@ -54,6 +54,7 @@ a {
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -310,6 +311,16 @@ img {
   text-align: center;
   display: block;
   padding: 14px;
+}
+@media (max-width: 900px) {
+  .header .nav .btns__btn {
+    width: 340px;
+  }
+}
+@media (max-width: 430px) {
+  .header .nav .btns__btn {
+    width: 200px;
+  }
 }
 .header .nav .btns .tel {
   background: rgb(31, 61, 146);
@@ -1522,4 +1533,119 @@ img {
 }
 #company-page .company .list .item .value {
   width: 70%;
+}
+
+.fixed-tel {
+  position: fixed;
+  right: 0;
+  top: 60%;
+  z-index: 100;
+}
+@media (max-width: 900px) {
+  .fixed-tel {
+    display: none;
+  }
+}
+.fixed-tel__btn {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2.4rem;
+  letter-spacing: 4px;
+  writing-mode: vertical-rl;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+  background: rgb(31, 61, 146);
+  border: 2px solid rgb(243, 183, 65);
+  padding: 16px 10px;
+}
+.fixed-tel__btn span {
+  display: block;
+}
+
+.tel-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+}
+.tel-modal.active {
+  display: block;
+}
+.tel-modal__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.39);
+  cursor: pointer;
+}
+.tel-modal__content {
+  min-width: 430px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border: 3px solid rgb(31, 61, 146);
+  padding: 40px 60px;
+  z-index: 1001;
+}
+@media (max-width: 430px) {
+  .tel-modal__content {
+    min-width: 280px;
+  }
+}
+.tel-modal__btn {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: rgb(31, 61, 146);
+  border: 2px solid rgb(243, 183, 65);
+  text-decoration: none;
+  padding: 14px 40px;
+  margin-bottom: 20px;
+}
+.tel-modal__number {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: rgb(31, 61, 146);
+}
+
+.fixed-btns {
+  display: none;
+}
+@media (max-width: 900px) {
+  .fixed-btns {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 90;
+  }
+}
+.fixed-btns__tel {
+  flex: 1;
+  font-size: 2.4rem;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  background: rgb(31, 61, 146);
+  text-decoration: none;
+  border: 2px solid rgb(243, 183, 65);
+  padding: 16px;
+}
+.fixed-btns__line {
+  flex: 1;
+  font-size: 2.4rem;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  background: rgb(6, 199, 85);
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  padding: 16px;
 }/*# sourceMappingURL=style.css.map */

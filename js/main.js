@@ -48,27 +48,24 @@ $(function () {
   // --------------------------------
   // モーダル
   // --------------------------------
-  // $(".js-modal-open").on("click", function (e) {
-  //   e.preventDefault();
-  //   $("#modal-water").addClass("active");
-  //   $("body").addClass("no-scroll");
-  // });
+  $(".js-modal-open").on("click", function (e) {
+    e.preventDefault();
+    const target = $(this).data("modal");
+    $("#" + target).addClass("active");
+    $("body").addClass("no-scroll");
+  });
 
-  // $(".js-modal-close").on("click", function () {
-  //   $("#modal-water").removeClass("active");
-  //   $("body").removeClass("no-scroll");
-  // });
+  $(".js-modal-close").on("click", function () {
+    $(this).closest(".modal").removeClass("active");
+    $("body").removeClass("no-scroll");
+  });
 
-  $('.js-modal-open').on('click', function(e) {
-  e.preventDefault();
-  const target = $(this).data('modal');
-  $('#' + target).addClass('active');
-  $('body').addClass('no-scroll');
-});
+  // 電話モーダル
+  $(".js-tel-open").on("click", function () {
+    $("#tel-modal").addClass("active");
+  });
 
-$('.js-modal-close').on('click', function() {
-  $(this).closest('.modal').removeClass('active');
-  $('body').removeClass('no-scroll');
-});
-  
+  $(".js-tel-close").on("click", function () {
+    $("#tel-modal").removeClass("active");
+  });
 });

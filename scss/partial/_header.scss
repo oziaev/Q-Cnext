@@ -80,6 +80,14 @@
         text-align: center;
         display: block;
         padding: 14px;
+
+        @include m.tb {
+          width: 340px;
+        }
+
+        @include m.sp {
+          width: 200px;
+        }
       }
 
       .tel {
