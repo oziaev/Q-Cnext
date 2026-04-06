@@ -1,0 +1,126 @@
+@use "_mixin" as m;
+@use "_common" as *;
+
+// 電話予約固定ボタン（PC）
+.fixed-tel {
+  position: fixed;
+  right: 0;
+  top: 60%;
+  z-index: 100;
+
+  @include m.tb {
+    display: none;
+  }
+
+  &__btn {
+    color: $white;
+    font-weight: bold;
+    font-size: $fs-text;
+    letter-spacing: 4px;
+    writing-mode: vertical-rl;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+    background: $blue;
+    border: 2px solid $yellow-1;
+    padding: 16px 10px;
+
+    span {
+      display: block;
+    }
+  }
+}
+
+// 電話モーダル
+.tel-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  &.active {
+    display: block;
+  }
+
+  &__overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.39);
+    cursor: pointer;
+  }
+
+  &__content {
+    min-width: 430px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $white;
+    border: 3px solid $blue;
+    padding: 40px 60px;
+    z-index: 1001;
+    
+    @include m.sp {
+      min-width: 280px;
+    }
+  }
+
+  &__btn {
+    display: block;
+    font-size: $fs-text;
+    font-weight: bold;
+    color: $white;
+    background: $blue;
+    border: 2px solid $yellow-1;
+    text-decoration: none;
+    padding: 14px 40px;
+    margin-bottom: 20px;
+  }
+
+  &__number {
+    font-size: $fs-lg;
+    font-weight: bold;
+    color: $blue;
+  }
+}
+
+// LINE・電話固定ボタン（SP only）
+.fixed-btns {
+  display: none;
+
+  @include m.tb {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 90;
+  }
+
+  &__tel {
+    flex: 1;
+    font-size: $fs-text;
+    color: $white;
+    text-align: center;
+    font-weight: bold;
+    background: $blue;
+    text-decoration: none;
+    border: 2px solid $yellow-1;
+    padding: 16px;
+  }
+
+  &__line {
+    flex: 1;
+    font-size: $fs-text;
+    color: $white;
+    text-align: center;
+    font-weight: bold;
+    background: $green;
+    text-decoration: none;
+    border: 2px solid $white;
+    padding: 16px;
+  }
+}

@@ -106,11 +106,37 @@
           <li><a href="index.html#voice">お客様の声</a></li>
         </ul>
         <div class="btns">
-          <a href="tel:000-0000-0000" class="btns__btn tel">電話予約</a>
-          <a href="#" class="btns__btn line">LINE予約</a>
+          <a href="tel:080-7700-0661" class="btns__btn tel">電話予約</a>
+          <a href="https://lin.ee/ukVvMf1y" class="btns__btn line" target="_blank">LINE予約</a>
         </div>
       </nav>
     </header>
+
+    <!-- 電話予約固定ボタン -->
+    <div class="fixed-tel">
+      <button class="fixed-tel__btn js-tel-open">
+        <span>電</span>
+        <span>話</span>
+        <span>予</span>
+        <span>約</span>
+      </button>
+    </div>
+
+    <!-- 電話予約モーダル -->
+    <div class="tel-modal" id="tel-modal">
+      <div class="tel-modal__overlay js-tel-close"></div>
+      <div class="tel-modal__content">
+        <a href="tel:080-7700-0661" class="tel-modal__btn">電話予約はこちら</a>
+        <p class="tel-modal__number">080-7700-0661</p>
+      </div>
+    </div>
+
+    <!-- LINE固定ボタン（SP only） -->
+    <div class="fixed-btns">
+      <a href="tel:080-7700-0661" class="fixed-btns__tel">電話予約</a>
+      <a href="https://line.me/~" target="_blank" class="fixed-btns__line">LINE予約</a>
+    </div>
+
 
     <main id="company-page">
 
@@ -235,7 +261,7 @@
           </div>
           <div class="right">
             <a href="tel:080-7700-0661" class="footer-btn tel">電話予約</a>
-            <a href="#" class="footer-btn line">LINE予約</a>
+            <a href="https://lin.ee/ukVvMf1y" target="_blank" class="footer-btn line">LINE予約</a>
           </div>
         </div>
       </div>
