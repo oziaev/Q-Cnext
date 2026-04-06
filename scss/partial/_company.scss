@@ -1,0 +1,176 @@
+@use "_mixin" as m;
+@use "_common" as *;
+
+#company-page {
+
+  .mainvisual {
+    background-image: url(../img/company-page-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 24px $section-bottom-pc;
+    margin-bottom: $section-bottom-pc;
+    
+    @include m.tb {
+      padding: 24px 32px;
+    }
+
+    @include m.sp {
+      padding: 24px 16px;
+    }
+
+    .wrapper {
+      text-align: left;
+
+      @include m.sp {
+        margin-bottom: $section-bottom-sp;
+      }
+
+      img {
+        width: 200px;
+        margin-top: 40px;
+        margin-bottom: $section-bottom-pc;
+      }
+      
+      .page-title {
+        color: $blue;
+        font-size: 5rem;
+        margin-left: 24px;
+        margin-bottom: $section-bottom-pc;
+
+        @include m.tb {
+          font-size: 4rem;
+        }
+        
+        span {
+          display: block;
+          font-size: $fs-h3;
+
+          @include m.tb {
+            font-size: $fs-text;
+          }
+        }
+      }
+    }
+  }
+
+    .greeting {
+    position: relative;
+    margin-bottom: $section-bottom-pc;
+
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 0;
+
+      .section-title {
+        margin-bottom: $section-bottom-pc;
+      }
+
+      .lead {
+        font-size: $fs-text;
+        margin-bottom: $section-bottom-sp;
+      }
+      
+      .flex {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+
+        @include m.tb {
+          flex-direction: column;
+          gap: 50px;
+        }
+        
+        .left {
+          width: 40%;
+
+          @include m.tb {
+            width: 70%;
+            margin-bottom: $section-bottom-pc;
+          }
+          
+          @include m.sp {
+            width: 100%;
+            margin-bottom: $section-bottom-sp;
+          }
+          
+          .career {
+
+            .title {
+              font-size: $fs-lg;
+              color: $blue;
+              text-align: left;
+              font-weight: $fw-bold;
+              margin-block: 24px;
+
+              @include m.sp {
+                font-size: $fs-text;
+              }
+            }
+
+            .list {
+              font-size: $fs-sm;
+              font-weight: $fw-bold;
+              text-align: left;
+
+              .item {
+                margin-left: 24px;
+                
+                &:first-child {
+                  margin-left: 0;
+                }
+              }
+            }
+          }
+        }
+        
+        .right {
+          width: 60%;
+          text-align: left;
+          font-size: 2rem;
+
+          @include m.tb {
+            width: 100%;
+          }
+
+          .text-1,
+          .text-2,
+          .text-3,
+          .text-4 {
+            margin-bottom: 32px;
+          }
+          
+
+          .sign {
+            text-align: right;
+            font-weight: $fw-bold;
+          }
+        }
+      }
+    }
+  }
+
+  .company {
+    .list {
+      .item {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        color: $blue;
+        font-weight: $fw-bold;
+        border-bottom: 1px solid $blue;
+        padding: 16px;
+        margin-bottom: 8px;
+
+        .label {
+          width: 30%;
+        }
+
+        .value {
+          width: 70%;
+        }
+      }
+    }
+  }
+
+}
