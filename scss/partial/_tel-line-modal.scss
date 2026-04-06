@@ -110,6 +110,10 @@
     text-decoration: none;
     border: 2px solid $yellow-1;
     padding: 16px;
+
+    @include m.sp {
+      font-size: 2rem;
+    }
   }
 
   &__line {
@@ -122,5 +126,9 @@
     text-decoration: none;
     border: 2px solid $white;
     padding: 16px;
+
+    @include m.sp {
+      font-size: 2rem;
+    }
   }
 }

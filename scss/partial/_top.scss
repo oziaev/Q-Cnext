@@ -92,11 +92,8 @@
         }
         
         @include m.sp {
-          grid-template-columns: repeat(2,1fr);
-        }
-        
-        @include m.sp {
           width: 250px;
+          gap: 10px;
           margin-left: 0;
           margin-inline: auto;
         }
@@ -120,9 +117,9 @@
           }
 
           @include m.sp {
-            width: 100px;
-            height: 100px;
-            font-size: 1.6rem;
+            width: 70px;
+            height: 70px;
+            font-size: 1.4rem;
           }
         }
       }
