@@ -241,7 +241,7 @@ img {
   top: 0;
   right: 0;
   cursor: pointer;
-  z-index: 100;
+  z-index: 1000;
 }
 .header .toggle {
   width: 44px;
@@ -277,7 +277,7 @@ img {
   transition: transform 0.4s ease;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 60px 40px;
   z-index: 150;
 }
@@ -1010,7 +1010,7 @@ img {
 }
 
 .service-page .mainvisual {
-  background-image: url(../img/company-page-bg.jpg);
+  background-image: url(../img/service-bg.jpg);
   background-position: center;
   background-size: cover;
   padding: 24px 95px;
