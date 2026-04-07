@@ -141,7 +141,7 @@
       margin-bottom: $section-bottom-sp;
 
       @include m.sp {
-        font-size: $fs-lg;
+        font-size: $fs-text;
       }
     }
   }
@@ -225,11 +225,19 @@
               font-weight: $fw-bold;
               padding: 4px;
               margin-bottom: $section-bottom-sp;
+
+              @include m.sp {
+                font-size: $fs-text;
+              }
             }
             
             .text {
               font-size: $fs-text;
               font-weight: $fw-bold;
+
+              @include m.sp {
+                font-size: $fs-sm;
+              }
             }
           }
         }
@@ -350,7 +358,7 @@
             }
 
             @include m.sp {
-              font-size: $fs-xl;
+              font-size: $fs-text;
             }
             
             &::before {
@@ -369,7 +377,8 @@
               }
 
               @include m.sp {
-                width: 200px;
+                width: 150px;
+                height: 15px;
               }
             }
           }
@@ -389,7 +398,7 @@
             margin-bottom: $section-bottom-sp;
 
             @include m.sp {
-              font-size: $fs-lg;
+              font-size: $fs-text;
             }
           }
 
@@ -411,7 +420,7 @@
               }
 
               @include m.sp {
-                font-size: $fs-sm;
+                font-size: 1.8rem;
               }
 
               span {
@@ -443,6 +452,10 @@
     &__text {
       font-size: $fs-text;
       margin-bottom: $section-bottom-pc;
+
+      @include m.sp {
+        font-size: 1.8rem;
+      }
     }
 
     &__list {
@@ -517,7 +530,7 @@
         font-size: $fs-text;
 
         @include m.sp {
-          font-size: $fs-sm;
+          font-size: 1.8rem;
         }
       }
     }
@@ -581,10 +594,18 @@
             text-align: left;
             font-weight: $fw-bold;
             margin-top: 24px;
+
+            @include m.sp {
+              font-size: $fs-text;
+            }
             
             span {
               font-size: $fs-text;
               margin-right: 16px;
+
+              @include m.sp {
+                font-size: 1.8rem;
+              }
             }
           }
         }

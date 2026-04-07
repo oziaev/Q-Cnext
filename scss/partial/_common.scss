@@ -69,6 +69,10 @@ body {
   background-color: $white;
   /* Safari only: 対象のクラスやタグを細くする */
   -webkit-font-smoothing: antialiased;
+
+  @include m.sp {
+    font-size: 1.8rem;
+  }
 }
 
 a {
@@ -100,7 +104,7 @@ img {
   }
 
   @include m.sp {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -125,6 +129,10 @@ img {
   font-weight: $fw-medium;
   position: relative;
   margin-bottom: 45px;
+
+  @include m.sp {
+    font-size: $fs-text;
+  }
 
   &::before {
     width: 100px;
@@ -209,7 +217,7 @@ img {
   }
 
   @include m.sp {
-    font-size: 4rem;
+    display: none;
   }
 }
 
@@ -234,5 +242,21 @@ img {
         display: block;
       }
     }
+  }
+}
+
+.pc-br {
+  display: inline;
+
+  @include m.tb {
+    display: none;
+  }
+}
+
+.sp-br {
+  display: none;
+
+  @include m.tb {
+    display: inline;
   }
 }

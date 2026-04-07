@@ -2,14 +2,13 @@
 @use "_common" as *;
 
 #company-page {
-
   .mainvisual {
     background-image: url(../img/company-page-bg.jpg);
     background-position: center;
     background-size: cover;
     padding: 24px $section-bottom-pc;
     margin-bottom: $section-bottom-pc;
-    
+
     @include m.tb {
       padding: 24px 32px;
     }
@@ -30,7 +29,7 @@
         margin-top: 40px;
         margin-bottom: $section-bottom-pc;
       }
-      
+
       .page-title {
         color: $blue;
         font-size: 5rem;
@@ -40,7 +39,7 @@
         @include m.tb {
           font-size: 4rem;
         }
-        
+
         span {
           display: block;
           font-size: $fs-h3;
@@ -53,7 +52,7 @@
     }
   }
 
-    .greeting {
+  .greeting {
     position: relative;
     margin-bottom: $section-bottom-pc;
 
@@ -69,8 +68,12 @@
       .lead {
         font-size: $fs-text;
         margin-bottom: $section-bottom-sp;
+
+        @include m.sp {
+          font-size: 1.8rem;
+        }
       }
-      
+
       .flex {
         display: flex;
         align-items: center;
@@ -80,7 +83,7 @@
           flex-direction: column;
           gap: 50px;
         }
-        
+
         .left {
           width: 40%;
 
@@ -88,14 +91,13 @@
             width: 70%;
             margin-bottom: $section-bottom-pc;
           }
-          
+
           @include m.sp {
             width: 100%;
             margin-bottom: $section-bottom-sp;
           }
-          
-          .career {
 
+          .career {
             .title {
               font-size: $fs-lg;
               color: $blue;
@@ -113,9 +115,13 @@
               font-weight: $fw-bold;
               text-align: left;
 
+              @include m.tb {
+                font-size: 1.8rem;
+              }
+
               .item {
                 margin-left: 24px;
-                
+
                 &:first-child {
                   margin-left: 0;
                 }
@@ -123,7 +129,7 @@
             }
           }
         }
-        
+
         .right {
           width: 60%;
           text-align: left;
@@ -139,7 +145,6 @@
           .text-4 {
             margin-bottom: 32px;
           }
-          
 
           .sign {
             text-align: right;
@@ -172,5 +177,12 @@
       }
     }
   }
+}
 
+.sp {
+  display: none;
+
+  @include m.sp {
+
+  }
 }

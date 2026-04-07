@@ -58,6 +58,10 @@
       font-size: $fs-h3;
       font-weight: $fw-bold;
       margin-bottom: $section-bottom-sp;
+
+      @include m.sp {
+        font-size: 2rem;
+      }
     }
 
     &__text {
@@ -91,7 +95,7 @@
           }
 
           @include m.sp {
-            font-size: 2.8rem;
+            font-size: 2.4rem;
           }
         }
 
@@ -127,7 +131,7 @@
               margin-bottom: 16px;
 
               @include m.sp {
-                font-size: 2.8rem;
+                font-size: 2.4rem;
               }
             }
 
@@ -229,7 +233,7 @@
           }
 
           @include m.sp {
-            font-size: 2.8rem;
+            font-size: 2.4rem;
           }
         }
 
@@ -265,7 +269,7 @@
               margin-bottom: 16px;
 
               @include m.sp {
-                font-size: 2.8rem;
+                font-size: 2.4rem;
               }
             }
 
@@ -383,7 +387,7 @@
             margin-bottom: 16px;
 
             @include m.sp {
-              font-size: 2.8rem;
+              font-size: 2.4rem;
             }
           }
 
@@ -393,7 +397,7 @@
             color: $blue;
 
             @include m.sp {
-              font-size: $fs-lg;
+              font-size: $fs-text;
             }
           }
         }

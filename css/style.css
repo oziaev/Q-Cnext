@@ -70,6 +70,11 @@ body {
   /* Safari only: 対象のクラスやタグを細くする */
   -webkit-font-smoothing: antialiased;
 }
+@media (max-width: 430px) {
+  body {
+    font-size: 1.8rem;
+  }
+}
 
 a {
   display: inline-block;
@@ -99,7 +104,7 @@ img {
 }
 @media (max-width: 430px) {
   .section-title {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -124,6 +129,11 @@ img {
   font-weight: 700;
   position: relative;
   margin-bottom: 45px;
+}
+@media (max-width: 430px) {
+  .box-title {
+    font-size: 2.4rem;
+  }
 }
 .box-title::before {
   width: 100px;
@@ -212,7 +222,7 @@ img {
 }
 @media (max-width: 430px) {
   .side-text {
-    font-size: 4rem;
+    display: none;
   }
 }
 
@@ -234,6 +244,24 @@ img {
 #works .slide-items .slide-set img {
   width: 100%;
   display: block;
+}
+
+.pc-br {
+  display: inline;
+}
+@media (max-width: 900px) {
+  .pc-br {
+    display: none;
+  }
+}
+
+.sp-br {
+  display: none;
+}
+@media (max-width: 900px) {
+  .sp-br {
+    display: inline;
+  }
 }
 
 .header {
@@ -571,7 +599,7 @@ img {
 }
 @media (max-width: 430px) {
   #top .concept h2 {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
   }
 }
 #top .menu .wrapper .list {
@@ -644,9 +672,19 @@ img {
   padding: 4px;
   margin-bottom: 45px;
 }
+@media (max-width: 430px) {
+  #top .necessity .wrapper .aircon .location-list .item .title {
+    font-size: 2.4rem;
+  }
+}
 #top .necessity .wrapper .aircon .location-list .item .text {
   font-size: 2.4rem;
   font-weight: 800;
+}
+@media (max-width: 430px) {
+  #top .necessity .wrapper .aircon .location-list .item .text {
+    font-size: 2.2rem;
+  }
 }
 #top .necessity .wrapper .aircon .flex {
   display: flex;
@@ -761,7 +799,7 @@ img {
 }
 @media (max-width: 430px) {
   #top .necessity .wrapper .house .stage_title {
-    font-size: 3.6rem;
+    font-size: 2.4rem;
   }
 }
 #top .necessity .wrapper .house .stage_title::before {
@@ -782,7 +820,8 @@ img {
 }
 @media (max-width: 430px) {
   #top .necessity .wrapper .house .stage_title::before {
-    width: 200px;
+    width: 150px;
+    height: 15px;
   }
 }
 #top .necessity .wrapper .house .stage_img {
@@ -799,7 +838,7 @@ img {
 }
 @media (max-width: 430px) {
   #top .necessity .wrapper .house .merit_text {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
   }
 }
 #top .necessity .wrapper .house .merit_list {
@@ -822,7 +861,7 @@ img {
 }
 @media (max-width: 430px) {
   #top .necessity .wrapper .house .merit_list .item {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 }
 #top .necessity .wrapper .house .merit_list .item span {
@@ -849,6 +888,11 @@ img {
 #top .service__text {
   font-size: 2.4rem;
   margin-bottom: 95px;
+}
+@media (max-width: 430px) {
+  #top .service__text {
+    font-size: 1.8rem;
+  }
 }
 #top .service__list {
   display: grid;
@@ -917,7 +961,7 @@ img {
 }
 @media (max-width: 430px) {
   #top .policy__policy .list {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 }
 #top .company {
@@ -979,9 +1023,19 @@ img {
   font-weight: 800;
   margin-top: 24px;
 }
+@media (max-width: 430px) {
+  #top .company .wrapper .flex .left .name {
+    font-size: 2.4rem;
+  }
+}
 #top .company .wrapper .flex .left .name span {
   font-size: 2.4rem;
   margin-right: 16px;
+}
+@media (max-width: 430px) {
+  #top .company .wrapper .flex .left .name span {
+    font-size: 1.8rem;
+  }
 }
 #top .company .wrapper .flex .right {
   width: 60%;
@@ -1065,6 +1119,11 @@ img {
   font-weight: 800;
   margin-bottom: 45px;
 }
+@media (max-width: 430px) {
+  .service-page .concept__title {
+    font-size: 2rem;
+  }
+}
 .service-page .concept__text {
   font-size: 2rem;
 }
@@ -1094,7 +1153,7 @@ img {
 }
 @media (max-width: 430px) {
   .service-page .water__list .item .label {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 }
 .service-page .water__list .item .flex {
@@ -1133,7 +1192,7 @@ img {
 @media (max-width: 430px) {
   .service-page .water__list .item .flex .info .set,
   .service-page .water__list .item .flex .info .time {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 }
 .service-page .water__list .item .flex .info .price {
@@ -1221,7 +1280,7 @@ img {
 }
 @media (max-width: 430px) {
   .service-page .aircon__list .item .label {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 }
 .service-page .aircon__list .item .flex {
@@ -1260,7 +1319,7 @@ img {
 @media (max-width: 430px) {
   .service-page .aircon__list .item .flex .info .set,
   .service-page .aircon__list .item .flex .info .time {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 }
 .service-page .aircon__list .item .flex .info .price {
@@ -1364,7 +1423,7 @@ img {
 }
 @media (max-width: 430px) {
   .service-page .option__list .flex .info .time {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 }
 .service-page .option__list .flex .info .title,
@@ -1375,7 +1434,7 @@ img {
 @media (max-width: 430px) {
   .service-page .option__list .flex .info .title,
   .service-page .option__list .flex .info .price {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -1445,6 +1504,11 @@ img {
   font-size: 2.4rem;
   margin-bottom: 45px;
 }
+@media (max-width: 430px) {
+  #company-page .greeting .wrapper .lead {
+    font-size: 1.8rem;
+  }
+}
 #company-page .greeting .wrapper .flex {
   display: flex;
   align-items: center;
@@ -1487,6 +1551,11 @@ img {
   font-size: 2.2rem;
   font-weight: 800;
   text-align: left;
+}
+@media (max-width: 900px) {
+  #company-page .greeting .wrapper .flex .left .career .list {
+    font-size: 1.8rem;
+  }
 }
 #company-page .greeting .wrapper .flex .left .career .list .item {
   margin-left: 24px;
@@ -1531,6 +1600,9 @@ img {
   width: 70%;
 }
 
+.sp {
+  display: none;
+}
 .fixed-tel {
   position: fixed;
   right: 0;
